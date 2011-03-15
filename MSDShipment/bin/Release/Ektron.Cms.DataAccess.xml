@@ -1,0 +1,106 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ektron.Cms.DataAccess
+</name>
+</assembly>
+<members>
+<member name="M:Ektron.Cms.DataIO.EkDataAccess.ExecSQLReturnDR(System.String)">
+	<summary>
+ Returns DataReader, this will always performs the lock.
+ </summary>
+	<param name="SQL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.ExecSQLReturnDR(System.String,System.Boolean)">
+	<summary>
+ Returns DataReader
+ </summary>
+	<param name="SQL">Query to be executed</param>
+	<param name="NoLock">false-lock will be performed on table, true-no lock will be performed on table</param>
+	<returns>IDbReader</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.ExecSQL(System.String)">
+	<summary>
+	</summary>
+	<param name="SQL"></param>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.ExecSQLReturnRowChanged(System.String)">
+	<summary>
+	</summary>
+	<param name="SQL">SQL</param>
+	<returns>Row Affected</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.ExecSQLReturnValue(System.String)">
+	<summary>
+	</summary>
+	<param name="SQL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.ExecSqlReturnDS(System.String)">
+	<summary>
+ Executes the query and returs result as dataset
+ </summary>
+	<param name="Sql">required query to be executed</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.GetTableMaxID(System.String,System.Int32)">
+	<summary>
+ returns next table id for identity
+ </summary>
+	<param name="TableName">tablename</param>
+	<param name="BatchSize">required size</param>
+	<returns>long value</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.GetValididatedLongIntList(System.String)">
+	<summary>
+ Goes through each string id in comma delimitted list and validates it is a valid long integer.  Returns  a new comma delimitted
+ list that has been validated.
+ </summary>
+	<param name="longStringList">comma delimitted list of long integers.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.allocateIDChunk(System.String,System.String,System.String,System.Int32,System.Int32@,System.Int32@)">
+	<summary>
+ calls the stored procedure AllocateIDChunk to get the next block of 10,000 IDs for a table.  Within a system, all tables start with the ID
+ of 0 and when a server needs a new ID, it calls this function (either locally or via web service) to get the next set of valid IDs
+ </summary>
+	<param name="siteName">The name of the site.  Required for replication.</param>
+	<param name="machineIdentifier">The name of the server requesting the block.</param>
+	<param name="tableName">The name of the table.</param>
+	<param name="currentID">The current ID being used.  For upgrade paths.</param>
+	<param name="newMinID">Out param.  Lower limit of new chunk</param>
+	<param name="newMaxID">Out param.  Upper limit of new chunk</param>
+	<returns>True if new block of IDs retrieved successfully.</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.ForceIDAllocation(System.String,System.Int32,System.Int32@,System.Int32@)">
+	<summary>
+ Ensures that a new chunk of IDs has been allocated for the provided table name.
+ </summary>
+	<param name="TableName">Name of the table to get IDs for.</param>
+	<param name="minimumValue">Minimum value of new block.  If 0 passed, will query max_entries table for last value used.</param>
+	<param name="nextChunkMin">out: the minimum value of the new block</param>
+	<param name="nextChunkMax">out: the maximum value of the new block</param>
+	<returns>True if the block was retrieved, false otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.GetInitializedDBCommand(System.Data.Common.DbConnection)">
+	<summary>
+ Returns the local Command object initialized with the supplied connection.
+ </summary>
+	<param name="connection"></param>
+	<returns></returns>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.GetInitializedDBCommand(System.Data.Common.DbConnection,System.String)">
+	<summary>
+ Returns the local Command object initialized with the supplied connection.
+ </summary>
+	<param name="connection"></param>
+	<returns></returns>
+</member><member name="M:Ektron.Cms.DataIO.EkDataAccess.GetInitializedDBConnection">
+	<summary>
+ returns a connection object with the connection string set based upon current RequestInformation.
+ </summary>
+	<returns></returns>
+</member>
+</members>
+</doc>

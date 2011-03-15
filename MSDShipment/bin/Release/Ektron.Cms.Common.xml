@@ -1,0 +1,1794 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ektron.Cms.Common
+</name>
+</assembly>
+<members>
+<member name="P:Ektron.Cms.XmlConfigData.FieldList">
+	<summary>
+ Returns the field definitions as XML. The definition includes field names, data types, XPath and more, including data list values.
+ </summary>
+	<value>XML as a string</value>
+	<remarks>See WorkArea\ewebeditpro\DesignToFieldList.xslt for an example.</remarks>
+</member><member name="P:Ektron.Cms.TaxonomyData.TaxonomyItems">
+	<summary>
+ Gets or sets a list of taxonomy items as an array of TaxonomyItemData. 
+ </summary>
+	<value></value>
+	<returns>An array of TaxonomyItemData.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyBaseData.TaxonomyType">
+	<summary>
+ Gets or sets the type items you want to associate with the taxonomy.
+   * Content = 0 
+   * User = 1
+   * Group = 2
+ </summary>
+	<value></value>
+	<returns>The taxonomy's type.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyBaseData.TaxonomyCreatedDate">
+	<summary>
+ Gets or sets the date and time the taxonomy was created.
+ </summary>
+	<value></value>
+	<returns>The date and time the taxonomy was created.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyContentRequest.ContentId">
+	<summary>
+ The content ID to be associated with the taxonomy's category.
+ </summary>
+	<value></value>
+	<returns>The content ID.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.TaxonomyPath">
+	<summary>
+ Gets or set the path of the taxonomy category. For example, "\\New Hampshire\\Restaurants\\Pizza"
+ </summary>
+	<value></value>
+	<returns>The path of the taxonomy category.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.GetAnalyticsData">
+	<summary>
+ When True, include all items from the taxonomy's structure. When false, use only the taxonomy 
+ category's structure.
+ </summary>
+	<value></value>
+	<returns>All items in the taxonomy's structure.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.TaxonomyIdList">
+	<summary>
+ Gets or sets a list of taxonomy items IDs associated with content.
+ </summary>
+	<value></value>
+	<returns>A list of taxonomy items.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.FolderId">
+	<summary>
+ Deprecated. Not in use.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.TaxonomyItemType">
+	<summary>
+ Gets or sets the item type being assigned to the taxonomy.
+   * Content = 0
+   * User = 1
+   * Group = 2
+   * Blogs = 3
+   * Forum = 4
+ </summary>
+	<value></value>
+	<returns>The item's type.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.IncludeItems">
+	<summary>
+ When True, include all items from the taxonomy's structure. When false, use only the taxonomy 
+ category's structure.
+ </summary>
+	<value></value>
+	<returns>All items in the taxonomy's structure.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.Depth">
+	<summary>
+ Gets or sets number of taxonomy levels to retrieve below each taxonomy/category. 
+ For example, if the taxonomy is Businesses &gt; Restaurants &gt; 
+ Pizza , and you set this property to 2, only Business and Restaurants are available in 
+ code behind. <para></para>
+ To retrieve the all of the categories for a taxonomy recursively, enter -1.<para></para>
+ The default value is 1. <para></para>
+		<b>Important!</b> - For a live site, Ektron strongly recommends leaving this value at 1. Increasing this value can slow down your live Web server. However, for testing on a staging server, you can increase the depth.
+ </summary>
+	<value></value>
+	<returns>An integer representing the depth level.</returns>
+	<remarks>This property should not be left empty. Enter a value at least a value of 1.</remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.Preview">
+	<summary>
+ Gets or sets whether preview content should be included in the taxonomy category.
+ </summary>
+	<value></value>
+	<returns>A boolean.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyRequest.ReadCount">
+	<summary>
+ Gets or sets the quantity of items in each taxonomy category.
+ </summary>
+	<value></value>
+	<returns>An integer representing the number of items.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.WorkSpaceUserRequest.UserId">
+	<summary>
+ Gets or sets the ID of a user to associate with the taxonomy category.
+ </summary>
+	<value></value>
+	<returns>The user ID.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.WorkSpaceGroupRequest.GroupId">
+	<summary>
+ Gets or sets the ID of the community group to associate with the taxonomy category.
+ </summary>
+	<value></value>
+	<returns>The community group's ID.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.TaxonomyBaseRequest.TaxonomyType">
+	<summary>
+ Gets or sets the type items you want to associate with the taxonomy.
+   * Content = 0 
+   * User = 1
+   * Group = 2
+ </summary>
+	<value></value>
+	<returns>Gets or sets the taxonomy's item type.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.UriFavorite.UserId">
+	<summary>
+ Gets or set the ID of the user with which the favorite is associated.
+ </summary>
+	<value></value>
+	<returns>The ID of the user.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.UriFavorite.FavoriteId">
+	<summary>
+ Gets or sets the numeric ID of the favorite.
+ </summary>
+	<value></value>
+	<returns>The numeric ID of a favorite.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.UriFavorite.FavoriteName">
+	<summary>
+ Gets or sets the name of the URI for the favorite.
+ </summary>
+	<value></value>
+	<returns>The name of the URI.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.UriFavorite.FavoriteUri">
+	<summary>
+ Gets or sets the actual URI value of the favorite.
+ </summary>
+	<value></value>
+	<returns>The URI value.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.UriFavorite.FavoriteDesc">
+	<summary>
+ Gets or sets a description for a URI favorite.
+ </summary>
+	<value></value>
+	<returns>A description of the URI favorite.</returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.UriFavorite">
+	<summary>
+ A list of properties that make up a URI favorite data.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.LibraryData.OriginalLibraryId">
+	<summary>
+ The Id of the original library item. For example, when dealing with a thumbnail image, this is the master image it was generated from.
+ </summary>
+</member><member name="P:Ektron.Cms.FormRequestData.Id">
+	<summary>
+ The numeric ID of the form.
+ </summary>
+	<value></value>
+	<returns>The numeric ID (Long) of the form.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FormRequestData.Language">
+	<summary>
+ Gets or sets the form's language ID. For example, 1033 for English, 1034 for Spanish or 1036 for French.
+ When set to 0 (zero), the language is dynamic.
+ </summary>
+	<value></value>
+	<returns>The form's language ID as an integer.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FormRequestData.TagRequired">
+	<summary>
+ Gets or sets whether to wrap form tags around the form element.
+   * <b>True</b> - wrap form tags around the form element.
+   * <b>False</b> - Do not wrap form tags around the form element.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Typically set to false.</remarks>
+</member><member name="P:Ektron.Cms.FormRequestData.PostBackData">
+	<summary>
+ Gets or sets the data submitted from the form as a collection.
+ </summary>
+	<value></value>
+	<returns>System.Collections.Specialized.NameValueCollection</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FormRequestData.IsPoll">
+	<summary>
+ Gets whether the form is used as poll.
+   * <b>True</b> - this form is a poll.
+   * <b>False</b> - this form is not a poll.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This should only be read not set.</remarks>
+</member><member name="P:Ektron.Cms.FormRequestData.PreFillFielddata">
+	<summary>
+ Gets or sets the data values that are used to pre-fill a form's fields. 
+ When you display a form, this is the information pre-loaded into each field. <para></para>
+ For example, in a Country: field you might have "United States" set to pre-fill the field. This way, people 
+ from the United States don't have to type it in each time. Another example is when a user is logged in and fills out a form 
+ more that once, his name and and email address always appear in their respective fields after completing the form 
+ the first time.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>If the AutoFill property is set to false, this property appears as empty.</remarks>
+</member><member name="P:Ektron.Cms.FormRequestData.FieldList">
+	<summary>
+ Gets or sets a list of the fields defined in the form.
+ </summary>
+	<value></value>
+	<returns>Ektron.Cms.FormFieldList</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FormRequestData.AutoFill">
+	<summary>
+ Indicates whether a form's fields are pre-filled when the form is displayed.
+ * <b>True</b> - a form's fields are pre-filled when the form is displayed.
+ * <b>False</b> - a form's fields are empty when the form is displayed.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.FormRequestData">
+	<summary>
+ A data object that contains information about a form.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FormFieldList.Fields">
+	<summary>
+ Gets or sets an array of field definitions.
+ </summary>
+	<value></value>
+	<returns>Ektron.Cms.FormFieldDefinition</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FormFieldList.Datalists">
+	<summary>
+ Gets or sets an array of defined datalists.
+ </summary>
+	<value></value>
+	<returns>Ektron.Cms.FormFieldDatalist</returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.FormFieldList">
+	<summary>
+ Describes the definition of all the fields in a specific form.
+ </summary>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.FieldName">
+	<summary>
+ Gets or sets the name of the field.
+ </summary>
+	<value></value>
+	<remarks>
+ The name is suitable for machine processing, such as with an XML parser.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.DisplayName">
+	<summary>
+ Gets or sets the name of the field to be displayed.
+ </summary>
+	<value></value>
+	<remarks>
+ The name is suitable for human reading.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.Datatype">
+	<summary>
+ Gets or sets the datatype of the field.
+ </summary>
+	<value></value>
+	<remarks>
+ The possible values of the datatype vary. Generally they conform to W3C XML Schema 
+ types such as 'string' and 'date'. Other values include 'selection' and 'choice'.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.Basetype">
+	<summary>
+ Gets or sets the basic datatype of the field.
+ </summary>
+	<value></value>
+	<remarks>
+ The possible values of the basic datatype vary, including, text, textbox, calendar and checkbox.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.ContentType">
+	<summary>
+ Gets or sets the type of content allowed within the field. This is loosely 
+ associated with the datatype.
+ </summary>
+	<value></value>
+	<remarks>
+ The possible values for content vary. 
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.XPath">
+	<summary>
+ Gets or sets the XPath expression that locates the field.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.DatalistName">
+	<summary>
+ Gets or sets the name of the datalist, if one is defined for this field. 
+ </summary>
+	<value>Name of the associated datalist.</value>
+	<remarks>
+ Applies only to fields whose values are selected from a list. The allowed values
+ are defined in the datalist.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDefinition.Language">
+	<summary>
+ Gets or sets the language code of the datalist. For example, en or en-US.
+ </summary>
+	<returns></returns>
+	<remarks>
+ The first two letters of the language code conform to ISO 639. The last two
+ letters are an optional country code that conforms to ISO 3166.
+ </remarks>
+</member><member name="T:Ektron.Cms.FormFieldDefinition">
+	<summary>
+ Describes the definition of an individual form field.
+ </summary>
+	<remarks>
+ Typically used as an array in class FormFieldList.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalistItem.DataValue">
+	<summary>
+ Gets or sets the value for this item in the data list.
+ </summary>
+	<value></value>
+	<remarks>
+ This value is typically language independent and suitable for machine processing.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalistItem.DisplayValue">
+	<summary>
+ Gets or sets the value to be displayed.
+ </summary>
+	<value></value>
+	<remarks>
+ This value is typically dependent on the language and suitable for human reading.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalistItem.IsDefault">
+	<summary>
+ Gets or sets whether this item is the default value in the datalist. 
+ Set to <b>True</b> if this item is a default value for the list.
+ </summary>
+	<value></value>
+	<remarks>
+ If a list allows only one item to be selected at a time, then only one item 
+ should be marked as the default. If more than one may be selected, then it
+ is reasonable to have more than one default.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalistItem.IsEnabled">
+	<summary>
+ Gets or sets whether this item is enabled for selection.
+ Set to <b>True</b> if this item is enabled.
+ </summary>
+	<returns></returns>
+	<remarks>
+ An item may be disabled to prevent it from being selected. Typically an item, once
+ defined and used, would not be deleted from the list, but simply disabled. This
+ preserves the display value of the item for backward compatibility. 
+ </remarks>
+</member><member name="T:Ektron.Cms.FormFieldDatalistItem">
+	<summary>
+ Describes an individual datalist item (most importantly its value and display value).
+ </summary>
+	<remarks>
+ Typically used as an array in class FormFieldDatalist <see cref="T:Ektron.Cms.FormFieldDatalist"/>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.Name">
+	<summary>
+ Gets or sets the name of the datalist.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.Language">
+	<summary>
+ Gets or sets the language code of the datalist. For example, en or en-US.
+ </summary>
+	<returns>Language code.</returns>
+	<remarks>
+ The first two letters of the language code conform to ISO 639. The last two
+ letters are an optional country code that conforms to ISO 3166.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.DatalistItems">
+	<summary>
+ Gets or sets the array of items defined in the datalist.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.DataSrc">
+	<summary>
+ Gets or sets the Data Source of the pre-defined datalist.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.DataSelect">
+	<summary>
+ Gets or sets the Data Select of the pre-defined datalist.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.CaptionXPath">
+	<summary>
+ Gets or sets the CaptionXPath of the pre-defined datalist.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.ValueXPath">
+	<summary>
+ Gets or sets the Value XPath of the pre-defined datalist.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDatalist.DataNamespaces">
+	<summary>
+ Gets or sets the Data Namespace of the pre-defined datalist.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="T:Ektron.Cms.FormFieldDatalist">
+	<summary>
+ Describes an individual datalist suitable as an enumeration for a select list.
+ </summary>
+	<remarks>
+ Typically used as an array in class FormFieldList.<para></para>
+ Typically referenced by name in class FormFieldDefinition.
+ </remarks>
+</member><member name="P:Ektron.Cms.FormFieldDataItem.FieldName">
+	<summary>
+ Gets or sets the name of the form field.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:Ektron.Cms.FormFieldDataItem.DataValue">
+	<summary>
+ Gets or sets the value of the form field.
+ </summary>
+	<value></value>
+	<remarks>
+ The data type of the value is variant (i.e., an Object).
+ </remarks>
+</member><member name="T:Ektron.Cms.FormFieldDataItem">
+	<summary>
+ Describes an instance of a data value from an individual form field. The data is a name/value pair.
+ </summary>
+	<remarks>
+ Typically, this class is used in an array.
+ </remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FolderId">
+	<summary>
+ Gets or sets the FolderId for the FolderRequest data object. 
+ </summary>
+	<value></value>
+	<returns>An existing folder's integer ID.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FolderName">
+	<summary>
+ Gets or sets the FolderName for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's name.</returns>
+	<remarks>Required Field</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FolderDescription">
+	<summary>
+ Gets or sets the folder description for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's description.</returns>
+	<remarks>Required Field</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.ParentId">
+	<summary>
+ Gets or sets the folder's parent folder ID for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's parent folder ID.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.TemplateFileName">
+	<summary>
+ Gets or sets the folder's template file for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's template name.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.StyleSheet">
+	<summary>
+ Gets or sets the folder's style sheet for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's style sheet name.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.SiteMapPathInherit">
+	<summary>
+ Gets or sets whether the folder's SiteMap path is inherited for the FolderRequest data object. <para></para>
+		<b>True</b> = SiteMap path is inherited. <para></para>
+		<b>False</b> = SiteMap path is not inherited.
+ </summary>
+	<value></value>
+	<returns>True or False depending whether an existing folder's SiteMap path is inherited or not.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.SiteMapPath">
+	<summary>
+ Gets or sets a folder's SiteMap path for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's SiteMap path.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.ImageDirectory">
+	<summary>
+ Gets or sets the physical path to the folder's image directory for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's image directory.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FileDirectory">
+	<summary>
+ Gets or sets the physical path to the folder's file directory for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An existing folder's file directory.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.DomainStaging">
+	<summary>
+ Gets or sets the staging domain for the folder when the folder is a domain folder and the site is a staging site. This is for the FolderRequest data object. 
+ </summary>
+	<value></value>
+	<returns>The folder's existing staging site domain.</returns>
+	<remarks>Example: dev.ektron.com</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.DomainProduction">
+	<summary>
+ Gets or sets the production domain for the folder when the folder is a domain folder and the site is a production site. This is for the FolderRequest data object. 
+ </summary>
+	<value></value>
+	<returns>The folder's existing production site domain.</returns>
+	<remarks>Example: www.ektron.com</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FolderType">
+	<summary>
+ Gets or sets the folder type of the folder. This enumeration is available at Ektron.Cms.Common.EkEnumeration.FolderType. <para></para>
+ Available Types:
+   * <b>0</b> = Content - a content folder that contains assets, documents and HTML content.
+   * <b>1</b> = Blog - designates the folder for use with the Blogging feature.
+   * <b>2</b> = Domain - designates the folder as a domain folder when using the Multi-site feature.
+   * <b>3</b> = Discussion Board - designates the folder for use as a Threaded Discussion folder.
+   * <b>4</b> = Discussion Forum - a subfolder of the Threaded Discussion folder.
+   * <b>5</b> = Root - Specifies a folder as root folder. This option is not available.
+   * <b>6</b> = Community - Membership users can add and edit content contained in these folders.
+ </summary>
+	<value></value>
+	<returns>The integer value of the folder type.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.IsDomainFolder">
+	<summary>
+ Gets or sets whether the folder is a domain folder for the FolderRequest data object. <para></para>
+		<b>True</b> = designate a folder as a domain folder. <para></para>
+		<b>False</b> = folder is not a domain folder.
+ </summary>
+	<value></value>
+	<returns>Returns True if the folder is a domain folder.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.XmlInherited">
+	<summary>
+ Gets or sets whether the XML configuration for the folder is inherited from the parent folder. This is for the FolderRequest data object. <para></para>
+		<b>True</b> = inherit the XML configuration from the parent folder. <para></para>
+		<b>False</b> = Do not inherit the XML configuration from the parent folder.
+ </summary>
+	<value></value>
+	<returns>Returns True if the XML configuration is inherited from the parent folder.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.EnableReplication">
+	<summary>
+ Gets or sets whether the folder is replicated during Quick Deploy. This is for the FolderRequest data object.<para></para>
+		<b>True</b> = replicate the folder during Quick Deploy. <para></para>
+		<b>False</b> = Do not replicate the folder during Quick Deploy.
+ </summary>
+	<value></value>
+	<returns>Returns True if the folder is replicated during Quick Deploy.</returns>
+	<remarks>This property is used with the Quick Deploy feature in CMS400.NET. It does not affect Site Replication.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.PublishActive">
+	<summary>
+ Gets or sets whether assets in the folder are published in another format. 
+ It also determines in which format the assets are published. For example, HTML or PDF. This is for the FolderRequest data object.
+   * <b>PublishPdfActive</b> = publish asset as a PDF.<para></para>
+   * <b>PublishHtmlActive</b> = publish asset as HTML.
+   * <b>""</b> (Empty)  - assets in the folder are not published.
+ </summary>
+	<value></value>
+	<returns>A string based on whether to publish contents as HTML, PDF or not at all.
+ </returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.XmlConfiguration">
+	<summary>
+ Gets or sets the XML configuration for the folder. This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>The existing XML configuration for the folder.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.BreakInheritButton">
+	<summary>
+ Gets or sets whether to break the folder's permission inheritance for the FolderRequest data object.<para></para>
+		<b>True</b> = break a folder's permission inheritance. <para></para>
+		<b>False</b> = Do not break a folder's permission inheritance.
+ </summary>
+	<value></value>
+	<returns>Returns True if the folder's permission inheritance is broken.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FolderCfldAssignments">
+	<summary>
+ Gets or set a list of metadata assigned to the folder.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.SubscriptionProperties">
+	<summary>
+ Gets or sets the folder's Subscriptions properties for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.suppressNotification">
+	<summary>
+ Gets or sets whether to disable Web alerts.  This is for the FolderRequest data object.<para></para>
+		<b>True</b> = suppress Web Alert notifications. <para></para>
+		<b>False</b> = allow Web Alert notifications.
+ </summary>
+	<value>True = suppress Web Alert notifications. <para></para>
+ False = allow Web Alert notifications.</value>
+ Default = False, to override this use the BreakInheritance property of the FolderRequest.SubscriptionProperties object (set it to True).
+ <returns></returns>
+	<remarks>Boolean value. If true, suppress Web Alert notifications. Otherwise, false.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.ContentSubAssignments">
+	<summary>
+ Gets or sets the folder's content subscription assignments.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.MetaInherited">
+	<summary>
+ Gets or sets whether the folder inherits metadata from another folder. The folder ID must be specified in MetaInheritedFrom property.
+   * <b>1</b> = inherits metadata from a folder.
+   * <b>0</b> = does not inherit metadata from a folder.
+ </summary>
+	<value></value>
+	<returns>An integer value representing whether the folder inherits metadata from another folder.</returns>
+	<remarks>If set to true, the folder ID must be specified in MetaInheritedFrom property.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.MetaInheritedFrom">
+	<summary>
+ Gets or Sets the folder ID from which metadata is inherited.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An integer value representing the folder ID</returns>
+	<remarks>InheritMetadata must be set to 1, otherwise it will be ignored.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.TaxonomyInherited">
+	<summary>
+ Set the property to true to inherit taxonomy from a folder. The folder ID must be specified in TaxonomyInheritedFrom property. 
+  This is for the FolderRequest data object. <para></para>
+		<b>1</b> = this folder inherits taxonomy from a folder.<para></para>
+		<b>0</b> = this folder does not inherit taxonomy from a folder.
+ </summary>
+	<value></value>
+	<returns>An integer value representing whether the folder inherits taxonomy from a folder.</returns>
+	<remarks>If set to true, the folder ID must be specified in TaxonomyInheritedFrom property.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.TaxonomyInheritedFrom">
+	<summary>
+ Gets or sets the numeric folder ID from which taxonomy is inherited.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An integer representing the folder ID from which taxonomy is inherited.</returns>
+	<remarks>The TaxonomyInherited property must be set to 1 or True, otherwise it will be ignored.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FlagInherited">
+	<summary>
+ Set the property to true to inherit flag from a folder. The folder ID must be specified in flagInheritedFrom property. 
+  This is for the FolderRequest data object. <para></para>
+		<b>1</b> = this folder inherits flag from a folder.<para></para>
+		<b>0</b> = this folder does not inherit flag from a folder.
+ </summary>
+	<value></value>
+	<returns>An integer value representing whether the folder inherits flag from a folder.</returns>
+	<remarks>If set to true, the folder ID must be specified in flagInheritedFrom property.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FlagInheritedFrom">
+	<summary>
+ Gets or sets the numeric folder ID from which flag is inherited.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>An integer representing the folder ID from which flag is inherited.</returns>
+	<remarks>The flagInherited property must be set to 1 or True, otherwise it will be ignored.</remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.CategoryRequired">
+	<summary>
+ Flag to indicate if a category selection is required while adding/editing content.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>Boolean value. If true, a category selection is required. Otherwise, false</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.TaxonomyIdList">
+	<summary>
+ Gets or sets a list of taxonomy IDs values separated by comma.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>Comma separated list of taxonomy IDs.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.FlagDefIdList">
+	<summary>
+ Gets or sets a list of flag definition IDs values separated by comma.  This is for the FolderRequest data object.
+ </summary>
+	<value></value>
+	<returns>Comma separated list of flag definition IDs.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.FolderRequest.ByPassMetadataUpateforFolder">
+	<summary>
+ Used only for folders hidden in workarea, if this is set to true ActivateMetadataToFolder is not called.
+ <b>True</b> = Do not call ActivateMetadataToFolder. <para></para>
+		<b>False</b> = Call ActivateMetadataToFolder. <para></para>
+	</summary>
+	<value></value>
+	<returns>True or False depending on whether to by pass calling ActivateMetadataToFolder</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.ExtensionServerProxy.IsAlive">
+	<summary>
+ Use this to tell if the remote server is up and running.  Meaning the service has been started.
+ </summary>
+	<returns>Returns False if server if not running.  Returns True if successfull connection made to server.</returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.EkXml">
+	<summary>
+ Helper class to make working with XML much easier in the common cases.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.EkRequestInformation.UserTimeZone">
+	<summary>
+ To get the actual TimeZoneInfo object from this call TimeZoneInfo.GetTimeZoneInfo(UserTimeZone)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.EkRequestInformation.IsDirty">
+	<summary>
+ When IsDirty is true, the ekRequestinformation will refresh the to its new state.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.EkRequestInformation.ShowBorders">
+	<summary>
+ States whether or not to display the toolbar borders when logged in.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Should be set through the common API SetShowBorders(bool) function.</remarks>
+</member><member name="P:Ektron.Cms.Common.EkRequestInformation.EnableMessaging">
+	<summary>
+ States whether or not to email messaging is enable in CMS.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.AnalyticsSettings.SuppressBeacon">
+	<summary>
+ Gets or sets whether the provider beacon is suppressed for a given user type.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.TestMode">
+	<summary>
+ Gets or sets the default currency Id.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.DefaultCurrencyId">
+	<summary>
+ Gets or sets the default currency Id.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.CurrencyId">
+	<summary>
+ Gets or sets the current currency Id for the request.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.CurrencyCultureCode">
+	<summary>
+ Gets or sets the culture code associated with the current currency.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.CurrencyAlphaISO">
+	<summary>
+ Gets or sets the Alpha ISO code the current currency.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.ISOCurrencySymbol">
+	<summary>
+ Read only function that gets the symbol for this currency.
+ Example: $
+ </summary>
+	<returns>Currency symbol for the currency, for example $</returns>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.CurrencySymbol">
+	<summary>
+ Read only function that gets the ISO symbol for this currency.
+ Example: USD
+ </summary>
+	<returns>ISO symbol for the currency, for example USD</returns>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.ComplianceMode">
+	<summary>
+ Gets or sets compliance mode.
+ </summary>
+	<returns>Boolean</returns>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.OrderProcessingDisabled">
+	<summary>
+ Gets or sets whether order processing is disabled (eSynch).
+ </summary>
+	<returns>Boolean</returns>
+</member><member name="P:Ektron.Cms.Common.CommerceSettings.PasswordHistory">
+	<summary>
+ Gets or sets the number of previous passwords to store for a user.
+ </summary>
+	<returns>Boolean</returns>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.GetURLBase(System.String,System.Int32,System.Boolean,System.Int32)">
+	<summary>
+ Returns the full base of a web address. Examples:
+ http://www.ektron.com/
+ https://www.ektron.com/
+ http://www.ektron.com:88/
+ </summary>
+	<param name="Port"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.XmlSafe(System.String)">
+	<summary>
+ Utility function to simply making text XML safe
+ </summary>
+	<param name="str"></param>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.FormatCurrency(System.Decimal,System.String)">
+	<summary>
+ Formats the given price based upon the supplied culture code.  For example, 10.50, en-Us would result in $10.50.
+ </summary>
+	<param name="price">price value to format</param>
+	<param name="cultureCode">culture code to format for.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.GetCurrencyCharacter(System.String)">
+	<summary>
+ Returns a currency character for supplied culture.
+ </summary>
+	<param name="cultureCode">culture code to retrieve currency character for.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.FormatPercent(System.Decimal,System.String)">
+	<summary>
+ Formats the given percent based upon the supplied culture code.  For example, 10.50, en-Us would result in 10.50%.
+ </summary>
+	<param name="percent">percent value to format</param>
+	<param name="cultureCode">culture code to format for.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.RemoveHTML(System.String)">
+	<summary>
+ Returns formatted HTML.
+ </summary>
+	<param name="strText">An unformatted HTML string.</param>
+	<returns>
+ String
+ </returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.GetTimeLapse(System.DateTime,Ektron.Cms.Common.EkRequestInformation)">
+	<summary> 
+ Gets the time lapse
+ </summary>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.getContentTypeIconAspx(System.Int32,Microsoft.VisualBasic.Collection,System.String)">
+	<summary>
+ get the icon for the content type
+ </summary>
+	<param name="ContentTypeID">content type</param>
+	<param name="colContent">VB collection contains "ContentSubType" and "ImageUrl" (as its icon path).</param>
+	<param name="appPath">application path to locate the icon</param>
+	<returns>image tag for the icon</returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.URLLinkFormat(System.Text.RegularExpressions.Match)">
+	<summary>
+ If the Match object passed in is a matches the falsePositivePattern Regex, the original match is returned as a string. Otherwise it returns a formatted anchor tag based on the original match.
+ </summary>
+	<param name="m">The regular expression match to check.</param>
+	<returns>The original match as text or an anchor tag based on the match.</returns>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.EmailAddressFormat(System.Text.RegularExpressions.Match)">
+	<summary>
+ Method returns a formated string for a mailto: link
+ </summary>
+	<param name="m">Match genersated by Regular Expression object</param>
+	<returns>mailto anchor tag based on the original Match text.</returns>
+</member><member name="M:Ektron.Cms.Common.EkFunctions.ConvertUrls(System.String)">
+	<summary>
+ Searches through a given string and looks for URLs embedded in the text. Any URLs found are converted to anchor tags based on that URL.
+ </summary>
+	<param name="stringIn">The string to search for URLs.</param>
+	<returns>A string where all URLs have been converted to links based on the URLs found.</returns>
+</member><member name="M:Ektron.Cms.EkException.ThrowException(System.Exception)">
+ --------------------------------------------------------------------------------
+ <summary>
+ Throws a friendly and helpful error message.
+ Only use this function to process UNEXPECTED errors.
+ To detect unexpected errors, set a break point in this function.
+ </summary>
+	<param name="ex">
+ 	The exception object from the Catch statement (see example). 
+ 	Value Type: <see cref="T:System.Exception"/> (System.Exception)
+ </param>
+	<remarks>
+ Example: 
+ Try
+     ' Your code here
+ Catch ex as Exception
+     EkException.ThrowException(ex)
+ Finally
+     ' Your code here
+ End Try
+ 
+ Format of message:
+ "ex.Message [AssemblyName.MethodName:line n]"
+ </remarks>
+ --------------------------------------------------------------------------------
+
+</member><member name="M:Ektron.Cms.EkException.LogException(System.Exception)">
+	<summary>
+ Logs the exception to the event log.
+ </summary>
+	<param name="ex">Exception to log.</param>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.EkException.LogException(System.String)">
+	<summary>
+ Logs the exception to the event log.
+ </summary>
+	<param name="Message">Write Exception message to Event log.</param>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.EkException.LogException(System.Exception,System.Diagnostics.EventLogEntryType)">
+	<summary>
+ Logs the exception to the event log using the supplied EventLogEntryType.
+ </summary>
+	<param name="ex">Exception to log.</param>
+	<param name="EventType"></param>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.EkException.ErrorLine(System.Exception)">
+ --------------------------------------------------------------------------------
+ <summary>
+ Returns a friendly message showing the module and line number that raised the exception.
+ </summary>
+	<param name="ex">
+ 	The exception object from the Catch statement (see example). 
+ 	Value Type: <see cref="T:System.Exception"/> (System.Exception)
+ </param>
+	<returns>String with the AssemblyName, MethodName and line number.	<see cref="T:System.String"/> (System.String)</returns>
+	<remarks>
+ Format of message:
+ " [AssemblyName.MethodName:line n]"
+ </remarks>
+ --------------------------------------------------------------------------------
+
+</member><member name="M:Ektron.Cms.EkException.WriteToEventLog(System.String,System.Diagnostics.EventLogEntryType)">
+	<summary>
+ Writes the entry (message) to the Application Event Log.
+ </summary>
+	<param name="Entry">Message to log into event log</param>
+	<param name="EventType">Log entry type [Error | Warning | Information]</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.EkException">
+ *******************************************************************************
+ 	Copyright 2005-2006	Ektron, Inc. All rights reserved.
+ *******************************************************************************
+ 
+ <summary>
+ Helper functions to process exception handling and provide for faster debugging.
+ </summary>
+	<remarks>
+	</remarks>
+ --------------------------------------------------------------------------------
+
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.UserAuthenticationType">
+	<summary>
+ Enumeration of external authentication types supported by the CMS out of the box.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Ektron.Cms.Common.EkEnumeration.PricingType.Fixed">
+	<summary>
+ Indicates this pricing type is a fixed amount.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Ektron.Cms.Common.EkEnumeration.PricingType.Floating">
+	<summary>
+ Indicates this pricing type is variable based upon a base currency price and current exchange rates.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.ActivityObjectType">
+	<summary>
+ Enumeration of Object types that can raise an activity.
+ </summary>
+	<remarks></remarks>
+ NOTE: need to keep some values same as CMSObjectTypes because we are reusing watch_tbl
+
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.ActivityActionType">
+	<summary>
+ Enumeration of Activity Action Types.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Ektron.Cms.Common.EkEnumeration.ActivityActionSource.All">
+	<summary>
+ Indicates that the user will be notified in all instances - regardless of source.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Ektron.Cms.Common.EkEnumeration.ActivityActionSource.Colleague">
+	<summary>
+ Indicates the user would only be notified if the activity source is a colleague.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Ektron.Cms.Common.EkEnumeration.ActivityActionSource.CommunityGroup">
+	<summary>
+ Indicates the user would only be notified if the activity source is a Community Group the user belongs to.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.ActivityActionSource">
+	<summary>
+ Enumeration of possible Activity Sources that you want to be notified on.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.ActivityScope">
+	<summary>
+ Enumeration of notification scope values.  Indicates the scope in which an activity occurred.
+ For exame, within a communit group or  auser wokspace.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.ActivityFeedType">
+	<summary>
+ Enumeration of possible ActivityStream types.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.ActivityType">
+	<summary>
+ List of Out of the Box Activity Types defined in the CMS 400.
+ </summary>
+	<remarks></remarks>
+ NOTE:  When adding new Activity Types, be sure to add them to the activity_type table too!
+
+</member><member name="T:Ektron.Cms.Common.EkEnumeration.SiteSetting">
+	<summary>
+ Enumration of sitesettings
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.DiscussionCategory.CategoryID">
+	<summary>
+ Gets or sets a Taxonomy category ID for a Discussion Board.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.DiscussionCategory.BoardID">
+	<summary>
+ Gets or sets a Discussion Board's ID.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.DiscussionCategory.Name">
+	<summary>
+ Gets or sets the name of the Discussion Board.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.DiscussionCategory.SortOrder">
+	<summary>
+ Gets the sort order of the Discussion Board.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.RegExId">
+	<summary>
+ Gets the unique ID generated for each record.
+ </summary>
+	<value></value>
+	<returns>The unique ID generated for each record.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.SiteId">
+	<summary>
+ Gets or sets the root folder ID of the site. Returns zero if no site is specified.
+ </summary>
+	<value></value>
+	<returns>The root folder ID of the site. Returns zero if no site is specified.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.ExpressionName">
+	<summary>
+ Gets or sets a descriptive name for the expression.
+ </summary>
+	<value></value>
+	<returns>A descriptive name for the expression.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.Expression">
+	<summary>
+ Gets or sets the regular expression to be used.
+ </summary>
+	<value></value>
+	<returns>The regular expression to be used.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.ExpressionMap">
+	<summary>
+ Gets or sets the destination for the expression.
+ </summary>
+	<value></value>
+	<returns>The destination for the expression.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.TransformedUrl">
+	<summary>
+ Gets or sets a sample of how the ExpressionMap URL will look.
+ </summary>
+	<value></value>
+	<returns>A sample of how the ExpressionMap URL will look.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.IsEnabled">
+	<summary>
+ Gets or sets whether the expression is active or not.
+ </summary>
+	<value></value>
+	<returns>Returns true if the expression is active. Otherwise, it returns false.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasRegExData.Priority">
+	<summary>
+ Gets or sets the look up order for the expression list. Priorities are:
+   * None
+   * High
+   * Medium
+   * Low 
+ </summary>
+	<value></value>
+	<returns>The look up order for the expression list.</returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.UrlAliasRegExData">
+	<summary>
+ A data class used to get or set information about a URL Alias that uses RegEx.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.SiteId">
+	<summary>
+ Gets the root folder ID of the site. If no site is specified, returns 0 (zero).
+ </summary>
+	<value></value>
+	<returns>The root folder ID of the site. If no site is specified, returns 0 (zero).</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.AliasId">
+	<summary>
+ Gets the unique ID generated for this record.
+ </summary>
+	<value></value>
+	<returns>The unique ID generated for this record.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.LibraryId">
+	<summary>
+ Gets or sets the Library ID for the content. 
+ </summary>
+	<value></value>
+	<returns>The Library ID for the content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.ContentId">
+	<summary>
+ Gets or sets the Content ID.
+ </summary>
+	<value></value>
+	<returns>The content ID.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.ContentLanguage">
+	<summary>
+ Gets the content language.
+ </summary>
+	<value></value>
+	<returns>The content language.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.ContentTitle">
+	<summary>
+ Gets the title of the content.
+ </summary>
+	<value></value>
+	<returns>The title of the content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.AliasName">
+	<summary>
+ Gets or sets the alias name for the URL without the extension. 
+ </summary>
+	<value></value>
+	<returns>The alias name for the URL without the extension.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.QueryString">
+	<summary>
+ Gets or sets the querystring parameters to append to the aliased URL.
+ </summary>
+	<value></value>
+	<returns>The querystring parameters to append to the aliased URL.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.QueryStringAction">
+	<summary>
+ Gets or sets the querystringaction parameters.
+ </summary>
+	<value></value>
+	<returns>The querystring parameters.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.IsDefault">
+	<summary>
+ Gets or sets which alias name should show when the content has multiple aliases.
+ </summary>
+	<value></value>
+	<returns>Which alias name should show when the content has multiple aliases.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.IsEnabled">
+	<summary>
+ Gets or sets whether the alias name is active or not.
+ </summary>
+	<value></value>
+	<returns>Returns true if the alias name is active. Otherwise, it returns false.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.Target">
+	<summary>
+ Gets or sets the destination URL for the alias.
+ </summary>
+	<value></value>
+	<returns>The destination URL for the alias.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.FileExtension">
+	<summary>
+ Gets or sets the file extension for the alias.
+ </summary>
+	<value></value>
+	<returns>The file extension for the alias.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.DisplayAlias">
+	<summary>
+ Gets the alias URL with the extension and query parameters.  
+ </summary>
+	<value></value>
+	<returns>The alias URL with the extension and query parameters.</returns>
+	<remarks>This is a computed field.</remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.HostName">
+	<summary>
+ Gets the name of the host where the content resides.
+ </summary>
+	<value></value>
+	<returns>The name of the host where the content resides.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasManualData.AliasPageName">
+	<summary>
+ Gets the name of the alias without the query string.
+ </summary>
+	<value></value>
+	<returns>The name of the alias without the query string.</returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.UrlAliasManualData">
+	<summary>
+ A data class used to get or set information about a Manual URL Alias.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.AutoId">
+	<summary>
+ Gets the unique ID generated for this record.
+ </summary>
+	<value></value>
+	<returns>The unique ID generated for this record.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.AliasName">
+	<summary>
+ Gets or sets the alias name for the URL.
+ </summary>
+	<value></value>
+	<returns>The alias name for the URL.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.Target">
+	<summary>
+ Gets or sets the destination for the alias. 
+ </summary>
+	<value></value>
+	<returns>The destination for the alias.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.SiteId">
+	<summary>
+ Gets or sets the root folder ID of the site. If no site is specified, returns 0 (zero).
+ </summary>
+	<value></value>
+	<returns>The root folder ID of the site. If no site is specified, returns 0 (zero).</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.AutoAliasType">
+	<summary>
+ Gets or sets the automatic alias source type. Types are Taxonomy and Folder.
+ </summary>
+	<value></value>
+	<returns>The automatic alias source type.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.LanguageId">
+	<summary>
+ Gets the language ID for the automatic alias. 
+ </summary>
+	<value></value>
+	<returns>The language ID for the automatic alias.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.FileExtension">
+	<summary>
+ Gets or sets the selected file extension.
+ </summary>
+	<value></value>
+	<returns>The selected file extension.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.SourceId">
+	<summary>
+ Gets or sets either the taxonomy ID or the folder ID depending on the auto alias type selected. 
+ </summary>
+	<value></value>
+	<returns>Either the taxonomy ID or the folder ID depending on the auto alias type selected.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.SourceName">
+	<summary>
+ Gets the name of the taxonomy or folder selected depending on the auto alias type selected.
+ </summary>
+	<value></value>
+	<returns>The name of the taxonomy or folder selected depending on the auto alias type selected.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.IsEnabled">
+	<summary>
+ Gets or sets whether the configuration is active or not.
+ </summary>
+	<value></value>
+	<returns>True if the configuration is active or not. Otherwise, it returns false.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.Example">
+	<summary>
+ Gets or sets a sample of the selected configuration.
+ </summary>
+	<value></value>
+	<returns>A sample of the selected configuration.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.PageNameType">
+	<summary>
+ Gets or sets the name for the configuration. Available types are:
+   * ContentTitle
+   * ContentId
+   * ContentIdAndLanguage
+ </summary>
+	<value></value>
+	<returns>The name for the configuration.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.ReplacementCharacter">
+	<summary>
+ Gets or sets the character that will replace special characters in the generated URL.
+ </summary>
+	<value></value>
+	<returns>The character that will replace special characters in the generated URL.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.HostName">
+	<summary>
+ Gets the name of the host where the content resides.
+ </summary>
+	<value></value>
+	<returns>The name of the host where the content resides.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.SelectedPath">
+	<summary>
+ Returns the folder or taxonomy path selected by the user
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.FormattedSelectedPath">
+	<summary>
+ Returns the folder or taxonomy path with modifications 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasAutoData.ExcludedPath">
+	<summary>
+ Returns the folder or taxonomy path excluded from the selected path.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.UrlAliasAutoData">
+	<summary>
+ A data class used to get or set information about an Automatic URL Alias.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasInfo.PreviousAliasName">
+	<summary>
+ Gets or sets the previous alias name for the Content.
+ </summary>
+	<value></value>
+	<returns>The previous alias name for the Content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasInfo.CurrentAliasName">
+	<summary>
+ Gets or sets the current alias name for the Content.
+ </summary>
+	<value></value>
+	<returns>The current alias name for the Content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasInfo.PreviousAliasExtension">
+	<summary>
+ Gets or sets the previous alias extension for the Content.
+ </summary>
+	<value></value>
+	<returns>The previous alias extension for the Content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasInfo.CurrentAliasExtension">
+	<summary>
+ Gets or sets the current alias extension for the Content.
+ </summary>
+	<value></value>
+	<returns>The current alias extension for the Content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasInfo.AliasId">
+	<summary>
+ Gets or sets the alias Id for the Content.
+ </summary>
+	<value></value>
+	<returns>The alias Id for the Content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasCommunityData.Id">
+	<summary>
+ Gets the unique ID generated for this record.
+ </summary>
+	<value></value>
+	<returns>The unique ID generated for this record.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasCommunityData.Target">
+	<summary>
+ Gets the destination for the alias. 
+ </summary>
+	<value></value>
+	<returns>The destination for the alias.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasCommunityData.LanguageId">
+	<summary>
+ Gets the language ID for the automatic alias. 
+ </summary>
+	<value></value>
+	<returns>The language ID for the automatic alias.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasCommunityData.IsEnabled">
+	<summary>
+ Gets or sets whether the configuration is active or not.
+ </summary>
+	<value></value>
+	<returns>True if the configuration is active or not. Otherwise, it returns false.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasCommunityData.Example">
+	<summary>
+ Gets or sets a sample of the selected configuration.
+ </summary>
+	<value></value>
+	<returns>A sample of the selected configuration.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasCommunityData.ReplacementCharacter">
+	<summary>
+ Gets or sets the character that will replace special characters in the generated URL.
+ </summary>
+	<value></value>
+	<returns>The character that will replace special characters in the generated URL.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.UrlAliasCommunityData.HostName">
+	<summary>
+ Gets the name of the host where the content resides.
+ </summary>
+	<value></value>
+	<returns>The name of the host where the content resides.</returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.Common.UrlAliasCommunityData">
+	<summary>
+ A data class used to get or set information about an Automatic URL Alias.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.RegExSampleData.ExpressionId">
+	<summary>
+ Gets the expression Id 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.RegExSampleData.Expression">
+	<summary>
+ Gets or sets the sample expression.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.RegExSampleData.ExpressionMap">
+	<summary>
+ Gets or sets the expression map.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.RegExSampleData.TransformedUrl">
+	<summary>
+ Gets or sets the transformed URL.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.RegExSampleData.Description">
+	<summary>
+ Gets or sets the description.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.Common.QuickLinkData.Link">
+	<summary>
+ Returns the link either the alias or the quicklink
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.PagingInfo.RecordsPerPage">
+	<summary>
+ Gets the records per page. 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.PagingInfo.CurrentPage">
+	<summary>
+Get or Set the Current page for which you want records
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.PagingInfo.TotalPages">
+	<summary>
+ Gets the total pages for this result set
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.PagingInfo.TotalRecords">
+	<summary>
+ Gets the total number of records.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.PagingInfo.StartRow">
+	<summary>
+ The Starting row number for the page.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This is a calculated field.</remarks>
+</member><member name="P:Ektron.Cms.PagingInfo.EndRow">
+	<summary>
+ The ending row number for the page.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This is a calculated field.</remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.FeedbackHeader">
+	<summary>
+ The label corresponding to how the user would rate the content block. Defaults to "How would you rate the usefulness of this content?".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.UserCommentsHeader">
+	<summary>
+ The label corresponding to why the user rated content the way they did. Defaults to "Tell us why you rated the content this way".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.ValidationMessage">
+	<summary>
+ The label displayed to a user when they try to submit a content rating without selecting a value of 1-9. Defaults to "Please select a rating before submitting your feedback.".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.ThankYouMessage">
+	<summary>
+ The label displayed to a user thanking them for their content rating. Defaults to "Thank you for your feedback.". 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.GoodLabel">
+	<summary>
+ The label corresponding to a "Good" content rating. This defaults to "Outstanding".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.BadLabel">
+	<summary>
+ The label corresponding to a "Bad" content rating. This defaults to "Poor".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.AlreadyRatedMessage">
+	<summary>
+ The message displayed to a user when they rate content, but have already rated it. Defaults to "You have already rated this content."
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.CookiesRequiredMessage">
+	<summary>
+ The message displayed to a user when they rate content, but they have cookies disabled. Defaults to "We're sorry, but you must enable cookies in your browser to rate this content."
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.CharsRemainingLabel">
+	<summary>
+ The label indicating to the user how many more characters they may enter into the 'comments' section of the rating form. Defaults to "Characters Remaining: ".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.RatingLevelLabel">
+	<summary>
+ The label used to indicate the meaning of the rating displayed to the user, e.g. 7.8/9. Defaults to "Rating Level: ".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.ContentRatingLabels.TotalRatingsLabel">
+	<summary>
+ The label used to indicate the meaning of the total ratings displayed to the user, e.g. "Total Ratings: 986". Defaults to "Total Ratings: "
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Ektron.Cms.ContentRatingLabels">
+	<summary>
+ Provides a convenient data class for getting and setting Content Rating Labels.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ContentHitsData.content_hits_tblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContentHitsData.content_hits_tblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContentHitsData.content_hits_tblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContentHitsData">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Ektron.Cms.AssetUpdateData.ContentId">
+	<summary>
+ Gets or sets the Content ID of the content item for the AssetInfoData object.
+ </summary>
+	<value></value>
+	<returns>Integer ID of the content item.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.AssetId">
+	<summary>
+ Gets or sets the Asset ID of the content item for the AssetInfoData object.
+ </summary>
+	<value></value>
+	<returns>Asset ID of the content item.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.FolderId">
+	<summary>
+ Gets or sets the Folder ID of the content item for the AssetInfoData object.
+ </summary>
+	<value></value>
+	<returns>Folder ID of the content item.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.FileName">
+	<summary>
+ Gets or sets the filename of the asset.
+ </summary>
+	<value></value>
+	<returns>Asset File Name.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.LanguageId">
+	<summary>
+ Get or sets the language ID of the content item for the ContentData object.
+ </summary>
+	<value></value>
+	<returns>Language ID as an integer. For example, 1033 (English).</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.Title">
+	<summary>
+ Gets or sets the content item's title for the ContentData object.
+ </summary>
+	<value></value>
+	<returns>Title of the content item.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.Teaser">
+	<summary>
+ Gets or sets a content's summary information for the ContentData object.
+ </summary>
+	<value></value>
+	<returns>Summary information for the content.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.Comment">
+	<summary>
+ Gets or sets comment information associated with a content item for the ContentData object.
+ </summary>
+	<value></value>
+	<returns>Comment information associated with a content item.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.GoLive">
+	<summary>
+ Gets or sets the start date a content item goes live on the site. 
+ </summary>
+	<value></value>
+	<returns>A string value that represents the date a content item goes live.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.EndDate">
+	<summary>
+ Gets or sets the end date of a content item. 
+ </summary>
+	<value></value>
+	<returns>A string value that represents the end date of a content item.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.EndDateAction">
+	<summary>
+ Gets or sets the action to be taken on the end date of a content item.
+ </summary>
+	<value></value>
+	<returns>A value that represents the action on the end date of a content item.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.MetaData">
+	<summary>
+ Gets or sets the Metadata of a content item as an array of ContentMetadata. This is for the 
+ ContentData object.
+ </summary>
+	<value></value>
+	<returns>Metadata as an array of AssetMetaData.</returns>
+	<remarks></remarks>
+</member><member name="P:Ektron.Cms.AssetUpdateData.TaxonomyTreeIds">
+	<summary>
+ Gets or sets the taxonomy IDs separated by commas.
+ </summary>
+	<value></value>
+	<returns>Asset File Name.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

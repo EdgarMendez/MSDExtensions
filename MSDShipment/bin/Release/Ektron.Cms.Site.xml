@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ektron.Cms.Site
+</name>
+</assembly>
+<members>
+<member name="M:Ektron.Cms.Site.EkSite.GetSiteSettings(System.Int64,System.Boolean)">
+	<summary>
+ Returns site settings.
+ </summary>
+	<param name="Id"></param>
+	<param name="flushcache"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Site.EkSite.GetAllSyncableRelationsForFolder(System.Int64)">
+	<summary>
+ Returns all the sync relations for a folder that are currently able to be synced.
+ </summary>
+	<param name="folderId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ektron.Cms.Site.EkSite.GetAllSyncableRelationsForContent(System.Int64,System.Int32)">
+	<summary>
+ Returns all the sync relations for a content that are currently able to be synced.
+ </summary>
+	<param name="contentId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

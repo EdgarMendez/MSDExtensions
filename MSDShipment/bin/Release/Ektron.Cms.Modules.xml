@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ektron.Cms.Modules
+</name>
+</assembly>
+<members>
+<member name="M:Ektron.Cms.Modules.EkModule.ecmCalendar(Ektron.Cms.Common.CalendarRequest)">
+	<summary></summary>
+</member>
+</members>
+</doc>
