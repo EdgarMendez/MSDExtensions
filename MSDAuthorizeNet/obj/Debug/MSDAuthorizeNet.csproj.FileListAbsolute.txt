@@ -1,0 +1,5 @@
+C:\Documents and Settings\eem.ACC\My Documents\Visual Studio 2008\Projects\MSDExtensions\MSDAuthorizeNet\bin\Debug\MSDAuthorizeNet.dll
+C:\Documents and Settings\eem.ACC\My Documents\Visual Studio 2008\Projects\MSDExtensions\MSDAuthorizeNet\bin\Debug\MSDAuthorizeNet.pdb
+C:\Documents and Settings\eem.ACC\My Documents\Visual Studio 2008\Projects\MSDExtensions\MSDAuthorizeNet\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\eem.ACC\My Documents\Visual Studio 2008\Projects\MSDExtensions\MSDAuthorizeNet\obj\Debug\MSDAuthorizeNet.dll
+C:\Documents and Settings\eem.ACC\My Documents\Visual Studio 2008\Projects\MSDExtensions\MSDAuthorizeNet\obj\Debug\MSDAuthorizeNet.pdb
