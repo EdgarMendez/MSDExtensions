@@ -10,9 +10,9 @@ using Ektron.Cms.Common;
 
 using System.Net.Mail;
 
-
 namespace Ektron.Cms.Extensibility.Commerce.MSD
 {
+    
     public class MSDBasketCalculation : Ektron.Cms.Extensibility.Commerce.BasketCalculatorStrategy
     {
         public override void OnAfterCalculate(BasketCalculatorData basketCalculatorData, CmsEventArgs eventArgs)
@@ -39,10 +39,11 @@ namespace Ektron.Cms.Extensibility.Commerce.MSD
         public override void OnAfterOrderPlaced(OrderData orderData, CmsEventArgs eventArgs)
         {
             String ToEmail = "ecommerce@msdignition.com";
+            String FromAddress = "registration@msdignition.com";
             String BodyMessage = String.Format("{2} {3} has placed Order #{0} on {1}", orderData.Id.ToString(),orderData.DateCreated.ToShortDateString(),orderData.Customer.FirstName,orderData.Customer.LastName);
             String Subject = String.Format("Order #{0} has been placed on MSD Powersports", orderData.Id);
                        
-            Ektron.Cms.Extensibility.Commerce.MSD.MSDHelperUtilities.SendOrderMail("registration@msdignition.com", ToEmail, Subject, BodyMessage);
+            Ektron.Cms.Extensibility.Commerce.MSD.MSDHelperUtilities.SendOrderMail(FromAddress, ToEmail, Subject, BodyMessage);
         }
     }
     
