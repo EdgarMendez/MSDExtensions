@@ -101,7 +101,14 @@ namespace Ektron.Cms.Extensibility.Commerce.MSD
         /// <returns></returns>
         public override string GetTrackingUrl(string trackingId)
         {
-            return "";
+            StringBuilder sb = new StringBuilder();
+            sb.Append("<a href='http://www.fedex.com/Tracking?tracknumbers=");
+            sb.Append(trackingId);
+            sb.Append("&action=track'>");
+            sb.Append(trackingId);
+            sb.Append("</a>");
+
+            return (sb.ToString());
         }
 
 
